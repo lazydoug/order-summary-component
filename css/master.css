@@ -1,0 +1,142 @@
+html, body, main {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: #E0E8FF;
+  font-family: 'Red Hat Display', sans-serif;
+  text-align: center;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #1F2F56;
+  font-weight: 900;
+  margin: 0;
+  padding-top: 10px;
+}
+
+h2 {
+  color: #1F2F56;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0;
+}
+
+p {
+  color: #7280A7;
+  font-weight: 500;
+  padding: 10px;
+}
+
+main>div {
+  border-radius: 20px;
+  background-color: #F5F7FF;
+  max-width: 375px;
+  box-shadow: 0 5px 20px #7280A726;
+}
+
+div>div:first-child {
+  background-image: url("../assets/illustration-hero.svg");
+  background-color: #1F2F56;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 20px 20px 0 0;
+}
+
+div>div:first-child~div {
+  padding: 20px;
+}
+
+div:nth-child(3) {
+  height: 80px;
+  background-color: #E0E8FF7A;
+  border-radius: 0.5em;
+  text-align: left;
+  position: relative;
+}
+
+div:nth-child(3)>img, div:nth-child(3)>div {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 20px;
+  vertical-align: text-top;
+}
+
+div:nth-child(3)>img {
+  height: 50%;
+}
+
+div:nth-child(3)>div {
+  display: inline-block;
+}
+
+div:nth-child(3)>div p {
+  margin: 0;
+  padding: 0;
+}
+
+div:nth-child(3)>a {
+  color: #3829E0;
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+  right: 20px;
+  transform: translate(0, -50%);
+  top: 50%;
+}
+
+div:nth-child(3)>a:hover {
+  text-decoration: none;
+  color: #3829E0BF;
+}
+
+div:last-child>a {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+div:last-child>a:first-of-type {
+  width: 100%;
+  padding: 15px 0;
+  border: none;
+  border-radius: 0.5em;
+  color: #FFF;
+  background-color: #3829E0;
+  box-shadow: 0 5px 20px #3829E07A;
+}
+
+div:last-child>a:first-of-type:hover {
+  background-color: #3829E0BF;
+}
+
+div:last-child>a:last-of-type {
+  color: #7280A7;
+}
+
+div:last-child>a:last-of-type:hover {
+  color: #1F2F56;
+}
+
+@media only screen and (min-width:375px) {
+  main>div {
+    border-radius: 20px;
+    background-color: #F5F7FF;
+    max-width: 450px;
+  }
+
+  div>div:first-child {
+    height: 225px;
+  }
+
+  div>div:first-child~div {
+    padding: 40px;
+  }
+}
